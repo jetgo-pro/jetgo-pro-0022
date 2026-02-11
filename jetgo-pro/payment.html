@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title>Төлем жасау</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Төлем жасау</h1>
+
+<div class="payment-box">
+    <h2 id="orderInfo"></h2>
+
+    <button class="pay-btn kaspi" onclick="pay('kaspi')">
+        <img src="assets/kaspi.png" class="pay-logo"> Kaspi арқылы төлеу
+    </button>
+
+    <button class="pay-btn halyk" onclick="pay('halyk')">
+        <img src="assets/halyk.png" class="pay-logo"> Halyk арқылы төлеу
+    </button>
+
+    <div id="paymentStatus"></div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/payment.js"></script>
+
+</body>
+</html>
